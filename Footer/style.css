@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: #eeece5;
+}
+footer{
+    position: fixed;
+    background: #ff4747c7;
+    bottom: 0;
+    left: 0;
+    color: aliceblue;
+    width: 100%;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    flex-wrap: wrap;
+}
+.logo-details{
+    margin: 0px 1em;
+    font-size: 2em;
+
+}
+.media-icons{
+    display: flex;
+}
+.media-icons a{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 10px;
+}
+.media-icons a:nth-child(1){
+    background: #4267B2;
+}
+.media-icons a:nth-child(2){
+    background: #1DA1F2;
+}
+.media-icons a:nth-child(3){
+    background: #E1306C;
+}
+.media-icons a:nth-child(4){
+    background: #FF0000;
+}
+
+
+.link-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: fit-content;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin: 3em 0;
+}
+.box{
+    font-size: 1em;
+    margin: 5px 10px;
+    /* height: 150px; */
+    width: 200px;
+    border: 2px solid white;
+    padding: 10px;
+    aspect-ratio: 16/9;
+}
+.box li{
+    list-style: none;
+    margin: .5em 0;
+}
+.box li a{
+    color: #d9d9d9eb;
+    text-decoration: none;
+}
+.link-name{
+    position: relative;
+    font-weight: 600;
+}
+.link-name::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 35px;
+    background: #fff;
+}
+
+@media (0px <= width <= 376px){
+    .top{
+        justify-content: center;
+        margin: 5px 0;
+        height: 50px;
+    }
+    .link-boxes{
+        justify-content: flex-start;
+        gap: .5em;
+        margin: 10px;
+    }
+    .box{
+        padding: 5px;
+        margin: 0;
+        width: 150px;
+        
+    }
+    .box li{
+        margin: 5px;
+    }
+    .logo-details{
+        margin: 0px auto;
+    font-size: 1.5em;
+    }
+    .media-icons a{
+        height: 35px;
+        width: 35px;
+        font-size: 15px;
+        line-height: 35px;
+    }
+}
